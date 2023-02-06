@@ -1,0 +1,252 @@
+:root {
+    --ltgreen: #5cbc48;
+    --ltred: #e87474;
+    --blue: #1a286a;
+}
+
+@font-face {
+    font-family: 'Varela-Round';
+    src: url('font/Varela-Round.ttf.woff') format('woff'),
+        url('font/Varela-Round.ttf.svg#Varela-Round') format('svg'),
+        url('font/Varela-Round.ttf.eot'),
+        url('font/Varela-Round.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    max-width: fit-content;
+    margin: auto;
+}
+main {
+    font-family: Varela-Round;
+    padding: 10px 40px;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.ig {
+    position: absolute;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+}
+
+
+.collect,
+.collec {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.collect .gr i {
+    padding-right: 10px;
+}
+
+.gr {
+    letter-spacing: 4px;
+}
+
+.gr,
+.prg span {
+    color: var(--ltgreen);
+}
+
+.prg {
+    text-align: center;
+    color: var(--blue);
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.collect button {
+    font-family: Varela-Round;
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--ltgreen);
+    cursor: pointer;
+}
+
+.collect button i {
+    margin-left: 8px;
+    padding: 14px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--ltred);
+    background-color: white;
+}
+
+
+/* second section */
+.scn {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.collec .prg {
+    color: black;
+}
+
+.collec small,
+.cart>.dsc {
+    color: gray;
+}
+
+.container .tbl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.frce .cart>.img {
+    width: 70px;
+}
+
+.frce .cart>.dsc {
+    text-align: center;
+}
+
+.frce .cl {
+    display: flex;
+}
+
+.cart {
+    margin: 20px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 18px 10px;
+    border-radius: 12px;
+    height: 230px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .cl {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .prg {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .collect button {
+        font-size: 10px;
+    }
+
+    .collect button i {
+        padding: 6px;
+    }
+
+
+}
+
+@media only screen and (min-width: 800px) {
+
+
+    .fst {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        margin-bottom: 160px;
+    }
+
+    .scn {
+        gap: 80px;
+        align-items: center;
+    }
+
+    .collect,
+    .collec {
+        align-items: flex-start;
+        margin-top: -80px;
+        word-spacing: 5px;
+        width: 450px;
+    }
+
+    .prg {
+        text-align: unset;
+
+    }
+
+
+    .fst .img {
+        width: 45%;
+    }
+
+    .scn .img {
+        width: 55%;
+    }
+
+    .ig {
+        top: 359px;
+        left: -28px;
+        width: 189px;
+    }
+
+    .sg {
+        top: 359px;
+        left: unset;
+        right: -28px;
+        width: 189px;
+    }
+
+    .collect button i {
+        left: 16px;
+    }
+
+    .gr {
+        font-size: 13px;
+        letter-spacing: 6px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .scn {
+        gap: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .prg {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .collect button {
+        font-size: 24px;
+        width: 390px;
+        margin-right: 10px;
+    }
+
+    .collect button i {
+        position: relative;
+        padding: 14px 16px;
+    }
+}
